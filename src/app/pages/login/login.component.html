@@ -1,0 +1,53 @@
+<section class="flex items-center justify-center bg-[#00205C] h-screen">
+    <div id="login" class="mt-2 bg-white p-8 rounded-lg">
+        <h1 class="text-3xl font-extrabold text-[#1D5BFB] text-center mt-4">
+            SGPCS
+        </h1>
+        <div class="flex flex-col justify-start">
+            <form id="form" class="flex flex-col">
+            <div class="relative mt-8">
+                <input
+                type="text"
+                id="username"
+                class="peer w-full border-0 focus:outline-none focus:ring-0 bg-inherit border-b py-1 focus:border-purple-600 focus:border-b-2 transition-colors placeholder-transparent"
+                placeholder="Nombre de usuario"
+                autocomplete="username"
+                required
+                />
+                <label
+                id="username-label"
+                for="username"
+                class="absolute left-0 -top-4 text-purple-600 cursor-text peer-focus:-top-4 peer-placeholder-shown:top-1 peer-placeholder-shown:text-gray-600 transition-all"
+                >Nombre de usuario</label
+                >
+            </div>
+            <div class="flex flex-grow relative mt-8">
+                <input
+                type="password"
+                id="password"
+                class="peer w-full border-0 focus:outline-none focus:ring-0 bg-inherit border-b py-1 focus:border-purple-600 focus:border-b-2 transition-colors placeholder-transparent"
+                placeholder="Contraseña"
+                autocomplete="current-password"
+                required
+                />
+                <i
+                class="bx bx-show p-2.5 bg-inherit border-b border-[#6b7280] text-gray-600 cursor-pointer focus:border-b-2 focus:border-purple-600 transition-colors peer"
+                ></i>
+                <label
+                id="password-label"
+                for="password"
+                class="absolute left-0 -top-4 text-purple-600 cursor-text peer-focus:-top-4 peer-placeholder-shown:top-1 peer-placeholder-shown:text-gray-600 transition-all"
+                >Contraseña</label
+                >
+            </div>
+            <button
+                class="p-2 text-white mt-8 rounded-3xl bg-[#1D5BFB] font-semibold text-xl"
+                id="signup"
+                type="submit"
+            >
+                Iniciar sesion
+            </button>
+            </form>
+        </div>
+    </div>
+</section>
